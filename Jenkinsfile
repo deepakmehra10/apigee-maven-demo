@@ -15,7 +15,7 @@ pipeline {
                  sh('java -version')
                  sh "echo ${username}.collect { it }"
                  environment = "test"
-                 println("mvn clean install -P${environment} -Dusername=$CB{username} -Dpassword=${password} -Doptions=override")
+                 println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
                       }
                     }
                 sh "echo ${username}"
