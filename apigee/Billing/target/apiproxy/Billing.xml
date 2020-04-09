@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="2" name="HelloWorld">
+<?xml version="1.0" encoding="UTF-8"?><APIProxy name="HelloWorld" revision="2">
     <Basepaths>/hello</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <Policies>
@@ -9,9 +8,9 @@
         <ProxyEndpoint>default</ProxyEndpoint>
     </ProxyEndpoints>
     <Resources/>
-    <Spec></Spec>
+    <Spec/>
     <TargetServers/>
     <TargetEndpoints>
         <TargetEndpoint>default</TargetEndpoint>
     </TargetEndpoints>
-</APIProxy>
+<Description>knoldus git: f97be7bc knoldus-Vostro-15-3568</Description></APIProxy>
