@@ -3,6 +3,15 @@ pipeline {
     stages {
         stage('build') {
             steps {
+            script {
+                      withCredentials([
+                        usernamePassword(credentialsId: 'gitlab',
+                          usernameVariable: 'username',
+                          passwordVariable: 'password')
+                      ]) {
+                        print 'username=' + username + 'password=' + password
+                      }
+                    }
                 sh 'java -version'
                 sh 'echo "Deepak"'
                 sh 'pwd'
