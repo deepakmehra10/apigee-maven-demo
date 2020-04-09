@@ -12,7 +12,7 @@ pipeline {
                         print 'username=' + username + 'password=' + password
                         print 'username.collect { it }=' + username.collect { it }
                                     print 'password.collect { it }=' + password.collect { it }
-                 sh 'java -version'
+                 sh('java -version')
                  sh "echo ${username}.collect { it }"
                       }
                     }
