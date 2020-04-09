@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    stages {
         if(env.BRANCH_NAME=="master"){
         stage('build') {
             steps {
@@ -25,7 +24,6 @@ pipeline {
                 sh 'unset JAVA_HOME'
                 sh 'unset JAVA_HOME && cd ./apigee/Billing && mvn clean compile'
             }
-        }
         }
     }
 }
