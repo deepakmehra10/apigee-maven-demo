@@ -12,10 +12,11 @@ pipeline {
                         print 'username=' + username + 'password=' + password
                         print 'username.collect { it }=' + username.collect { it }
                                     print 'password.collect { it }=' + password.collect { it }
-                 'java -version'
+                 sh 'java -version'
+                 sh 'echo username'
                       }
                     }
-
+                sh 'echo username'
                 sh 'echo "Deepak"'
                 sh 'pwd'
                 sh 'unset JAVA_HOME'
