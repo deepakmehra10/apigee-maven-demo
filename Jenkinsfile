@@ -5,7 +5,7 @@ pipeline {
             steps {
             script {
                       withCredentials([
-                        usernamePassword(credentialsId: 'gitlab',
+                        usernamePassword(credentialsId: 'apigee-credentials',
                           usernameVariable: 'username',
                           passwordVariable: 'password')
                       ]) {
