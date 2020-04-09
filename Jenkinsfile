@@ -14,9 +14,11 @@ pipeline {
                                     print 'password.collect { it }=' + password.collect { it }
                  sh('java -version')
                  sh "echo ${username}.collect { it }"
+                 environment = "test"
+                 println("mvn clean install -P${environment} -Dusername={username} -Dpassword=${password} -Doptions=override")
                       }
                     }
-                sh 'echo ${username}'
+                sh "echo ${username}"
                 sh 'echo "Deepak"'
                 sh 'pwd'
                 sh 'unset JAVA_HOME'
