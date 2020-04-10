@@ -16,7 +16,8 @@ pipeline {
                  sh "echo ${username}.collect { it }"
                  environment = "test"
                  println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
-                 sh 'env.getEnvironment()'
+                 test = env.getEnvironment()
+                 println(${test})
                       }
                     }
 
