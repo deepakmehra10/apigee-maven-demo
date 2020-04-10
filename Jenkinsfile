@@ -21,6 +21,7 @@ pipeline {
                  println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
                       }
                     }
+                sh "env.BRANCH_NAME"
                 sh "echo ${username}"
                 sh 'echo "Deepak"'
                 sh 'pwd'
