@@ -2,6 +2,9 @@ pipeline {
     agent any
     stages {
         stage('build') {
+         when{
+            branch 'develop'
+          }
             steps {
             script {
                       withCredentials([
@@ -16,6 +19,7 @@ pipeline {
                  sh "echo ${username}.collect { it }"
                  environment = "test"
                  println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
+                 sh "mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override"
                  branch_name = env.BRANCH_NAME
                  println(branch_name)
                       }
