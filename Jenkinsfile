@@ -16,9 +16,11 @@ pipeline {
                  sh "echo ${username}.collect { it }"
                  environment = "test"
                  println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
+                 sh 'env.BRNACH_NAME'
+                 sh "env.BRANCH_NAME"
                       }
                     }
-                sh "scm.branches[0].name"
+
                 sh "echo ${username}"
                 sh 'echo "Deepak"'
                 sh 'pwd'
