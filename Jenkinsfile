@@ -17,7 +17,7 @@ pipeline {
                  environment = "test"
                  println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
                  test = env.getEnvironment()
-                 println(${test})
+                 println(test)
                       }
                     }
 
