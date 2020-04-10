@@ -19,7 +19,7 @@ pipeline {
                  sh "echo ${username}.collect { it }"
                  environment = "test"
                  println("mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override")
-                 sh 'unset JAVA_HOME && cd ./apigee/Billing && mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override'
+                 sh "unset JAVA_HOME && cd ./apigee/Billing && mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override"
                  branch_name = env.BRANCH_NAME
                  println(branch_name)
                       }
