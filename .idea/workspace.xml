@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1db0193-7f5f-45b8-a7b8-1bc8d86daf53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="308">
+              <caret line="16" column="94" selection-start-line="15" selection-start-column="24" selection-end-line="16" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -239,7 +238,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="SBT Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.59646016" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4743363" />
       <window_info anchor="bottom" id="Docker" order="10" />
       <window_info anchor="bottom" id="Graph Database Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -321,8 +320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="308">
+          <caret line="16" column="94" selection-start-line="15" selection-start-column="24" selection-end-line="16" selection-end-column="94" />
         </state>
       </provider>
     </entry>
