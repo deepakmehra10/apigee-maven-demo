@@ -16,7 +16,7 @@ pipeline {
                         print 'username.collect { it }=' + username.collect { it }
                                     print 'password.collect { it }=' + password.collect { it }
                  environment = "test"
-                 sh "echo 'Hello testing..'"
+                 sh "echo 'Hello testing...'"
                  sh "cd ./apigee/Billing && mvn clean install -P${environment} -Dusername=${username} -Dpassword=${password} -Doptions=override"
                       }
                     }
