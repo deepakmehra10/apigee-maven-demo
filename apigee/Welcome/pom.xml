@@ -10,8 +10,8 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.deepak</groupId>
-  <artifactId>Billing</artifactId>
+  <artifactId>Welcome</artifactId>
   <version>1.0</version>
-  <name>Billing</name>
+  <name>Welcome</name>
   <packaging>pom</packaging>
 </project>
